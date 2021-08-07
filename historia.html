@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate" />
+	<title>Fontana - Historia</title>
+	<link rel="icon" href="public/images/fontana.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+<body>
+	<header class="header-container">
+		<div class="header">
+			<ul class="list">
+				<li class="item">
+					<a href="./index.html" class="header__text">SOBRE NOSOTROS</a>
+				</li>
+				<li class="item">
+					<a href="./servicios.html" class="header__text">SERVICIOS</a>
+				</li>
+				<li class="item">
+					<a href="./contacto.html" class="header__text">CONTACTO</a>
+				</li>
+				<li class="item">
+					<a href="./historia.html" class="header__text">HISTORIA</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="menu__res">
+			<ul>
+				<li class="menu">
+					<img src="public/images/menu.png" id="menu-res" class="menu-img" alt=" ">
+					<img src="public/images/menu.png" id="menu2-res" class="menu-img menu-img2" alt=" ">
+				</li>
+				<ul class="list-res" id="list-right-res">
+					<li class="item-list">
+						<a href="./index.html" class="list-res__text">SOBRE NOSOTROS</a>
+					</li>
+					<li class="item-list">
+						<a href="./servicios.html" class="list-res__text">SERVICIOS</a>
+					</li>
+					<li class="item-list">
+						<a href="./historia.html" class="list-res__text">HISTORIA</a>
+					</li>
+					<li class="item-list">
+						<a href="./contacto.html" class="list-res__text">CONTACTO</a>
+					</li>
+				</ul>
+			</ul>
+		</div>
+
+			<script>
+				const menuRes = document.getElementById('menu-res');
+				menuRes.addEventListener('click', barraRes, true);
+				const menuRes2 = document.getElementById('menu2-res');
+				menuRes2.addEventListener('click', barraRes2, true);
+
+				function barraRes() {
+				document.getElementById('menu-res').style.visibility = 'hidden';
+				document.getElementById('menu2-res').style.visibility = 'visible';
+				document.getElementById('list-right-res').style.visibility = 'visible';}
+				function barraRes2() {
+				document.getElementById('menu-res').style.visibility = 'visible';
+				document.getElementById('menu2-res').style.visibility = 'hidden';
+				document.getElementById('list-right-res').style.visibility = 'hidden';}
+
+			</script>
+	</header>
+	<div class="historia">
+		<div class="center__historia">
+			<div class="historia__title">
+				<h1 class="title__historia">HISTORIA</h1>
+				<p class="subtitle__historia">¡Bienvenidos a nuestro peqeño emprendimiento, a continuacion hablamos sobre nosotros!</p>
+			</div>
+			<div class="text__historia">
+				<p class="historia__pr">Somos dos hermanos xxxx y xxxx de 23 y 21 años, residimos en Reconquista.
+				Venimos de una familia integrada por seis personas, de diferentes profesiones,nosotros dos cincidimos en el gusto hacia la informatica</p>
+				<p class="historia__pr">Ambos somos estudiantes, xxxx soy tecnico Superior en desarrollo de software y actual estudiante del profesorado de matematica
+				con experiencias laborales en varias empresas en los sectores de manejo de sistemas y electroncas
+				xxx es estudiante avanzado de ingenieria eletromecanica.
+				Esto comenzó como un pasa tiempo y se fue convirtiendo en algo real, dandonos cuenta que podiamos ayudar a mucha gente con nuestros servicios</p>
+				<p class="historia__pr">Nuestro principal objetivo es brindarle al cliente un servicio de calidad, logrando de esta forma su completa satisfacción y lograr
+				 que nuestros propios clientes nos recomienden, ofreciendo también un amplio catálogo de artículos y accesorios de cómputo a precios accesibles.</p>
+			</div>
+			<div class="button__historia">
+				<div class="historia__button"><a href="./contacto.html" class=" historia__btn">CONTACTANOS</a></div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-horarios">
+			<div class="footer-txt">HORARIOS</div>
+			<div class="footer-content">
+				<p class="white-hard">Lunes a Viernes</p>
+				<p class="white">08:00 a 12:00 - 16:00 a 20:00</p>
+				<p class="white-hard">Sábados</p>
+				<p class="white">08:00 a 12:00</p>
+			</div>
+		</div>
+		<div class="footer-accesos">
+			<div class="footer-txt">ACCESOS</div>
+			<div class="footer-content">
+				<div><a href="./index.html" class="footer__ac-text">Sobre nosotros</a></div>
+				<div><a href="./servicio.html" class="footer__ac-text">Servicio</a></div>
+				<div><a href="./historia.html" class="footer__ac-text">Historia</a></div>
+			</div>
+		</div>
+		<div class="footer-contacto">
+			<div class="footer-txt">CONTACTO</div>
+			<div class="footer-content">
+				<div class="contacto">
+					<img src="public/images/ubicacion.png" class="ico" alt=" ">
+					<p class="white">Reconquista, Santa Fe</p>
+				</div>
+				<div class="contacto">
+					<img src="public/images/telefono.png" class="ico" alt=" ">
+					<p class="white">+54 3482576550</p>
+				</div>
+				<div class="contacto">
+					<img src="public/images/whatsapp.png" class="ico" alt=" ">
+					<p class="white">+54 3482576550</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

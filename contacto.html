@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate" />
+	<title>Fontana - Contacto</title>
+	<link rel="icon" href="public/images/fontana.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+<body>
+	<header class="header-container">
+		<div class="header">
+			<ul class="list">
+				<li class="item">
+					<a href="./index.html" class="header__text">SOBRE NOSOTROS</a>
+				</li>
+				<li class="item">
+					<a href="./servicios.html" class="header__text">SERVICIOS</a>
+				</li>
+				<li class="item">
+					<a href="./contacto.html" class="header__text">CONTACTO</a>
+				</li>
+				<li class="item">
+					<a href="./historia.html" class="header__text">HISTORIA</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="menu__res">
+			<ul>
+				<li class="menu">
+					<img src="public/images/menu.png" id="menu-res" class="menu-img" alt=" ">
+					<img src="public/images/menu.png" id="menu2-res" class="menu-img menu-img2" alt=" ">
+				</li>
+				<ul class="list-res" id="list-right-res">
+					<li class="item-list">
+						<a href="./index.html" class="list-res__text">SOBRE NOSOTROS</a>
+					</li>
+					<li class="item-list">
+						<a href="./servicios.html" class="list-res__text">SERVICIOS</a>
+					</li>
+					<li class="item-list">
+						<a href="./historia.html" class="list-res__text">HISTORIA</a>
+					</li>
+					<li class="item-list">
+						<a href="./contacto.html" class="list-res__text">CONTACTO</a>
+					</li>
+				</ul>
+			</ul>
+		</div>
+			<script>
+				const menuRes = document.getElementById('menu-res');
+				menuRes.addEventListener('click', barraRes, true);
+				const menuRes2 = document.getElementById('menu2-res');
+				menuRes2.addEventListener('click', barraRes2, true);
+
+				function barraRes() {
+				document.getElementById('menu-res').style.visibility = 'hidden';
+				document.getElementById('menu2-res').style.visibility = 'visible';
+				document.getElementById('list-right-res').style.visibility = 'visible';}
+				function barraRes2() {
+				document.getElementById('menu-res').style.visibility = 'visible';
+				document.getElementById('menu2-res').style.visibility = 'hidden';
+				document.getElementById('list-right-res').style.visibility = 'hidden';}
+
+			</script>
+	</header>
+	<div class="contacto-html">
+		<div class="center-contacto">
+			<div class="contacto-left">
+				<div class="contacto-map">
+					<iframe class="contacto-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=858&amp;height=353&amp;hl=en&amp;q=%20Reconquista+(Impresiones)&amp;t=p&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.es/es/info/covid-19'>t</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=58daca618eae79e150a62103f81ed3d70858ae3b'></script>
+				</div>
+			</div>
+			<div class="contacto-right">
+				<div class="contacto-right-div">
+					<h2 class="contacto-title">LOCAL DE ATENCION AL PUBLICO </h2>
+					<p class="contacto-text contacto-margin"> calle 18, altura 4790 (Reconquista)<br>Teléfono: 420210 <br>WhatsApp: +54 3482477440 <br>E-mail: Solucionesinformaticas@gmail.com.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-horarios">
+			<div class="footer-txt">HORARIOS</div>
+			<div class="footer-content">
+				<p class="white-hard">Lunes a Viernes</p>
+				<p class="white">08:00 a 12:00 - 16:00 a 20:00</p>
+				<p class="white-hard">Sábados</p>
+				<p class="white">08:00 a 12:00</p>
+			</div>
+		</div>
+		<div class="footer-accesos">
+			<div class="footer-txt">ACCESOS</div>
+			<div class="footer-content">
+				<div><a href="./index.html" class="footer__ac-text">Sobre nosotros</a></div>
+				<div><a href="./servicio.html" class="footer__ac-text">Servicio</a></div>
+				<div><a href="./historia.html" class="footer__ac-text">Historia</a></div>
+			</div>
+		</div>
+		<div class="footer-contacto">
+			<div class="footer-txt">CONTACTO</div>
+			<div class="footer-content">
+				<div class="contacto">
+					<img src="public/images/ubicacion.png" class="ico" alt=" ">
+					<p class="white">Reconquista, Santa Fe</p>
+				</div>
+				<div class="contacto">
+					<img src="public/images/telefono.png" class="ico" alt=" ">
+					<p class="white">+54 3482576550</p>
+				</div>
+				<div class="contacto">
+					<img src="public/images/whatsapp.png" class="ico" alt=" ">
+					<p class="white">+54 3482576550</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

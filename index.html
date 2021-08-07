@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="	notranslate" />
+	<title>Fontana</title>
+	<link rel="icon" href="public/images/fontana.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+<body>
+	<header class="header-container">
+		<div class="header">
+			<ul class="list">
+				<li class="item">
+					<a href="./index.html" class="header__text">SOBRE NOSOTROS</a>
+				</li>
+				<li class="item">
+					<a href="./servicios.html" class="header__text">SERVICIOS</a>
+				</li>
+				<li class="item">
+					<a href="./contacto.html" class="header__text">CONTACTO</a>
+				</li>
+				<li class="item">
+					<a href="./historia.html" class="header__text">HISTORIA</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="menu__res">
+			<ul>
+				<li class="menu">
+					<img src="public/images/menu.png" id="menu-res" class="menu-img" alt=" ">
+					<img src="public/images/menu.png" id="menu2-res" class="menu-img menu-img2" alt=" ">
+				</li>
+				<ul class="list-res" id="list-right-res">
+					<li class="item-list">
+						<a href="./index.html" class="list-res__text">SOBRE NOSOTROS</a>
+					</li>
+					<li class="item-list">
+						<a href="./servicios.html" class="list-res__text">SERVICIOS</a>
+					</li>
+					<li class="item-list">
+						<a href="./historia.html" class="list-res__text">HISTORIA</a>
+					</li>
+					<li class="item-list">
+						<a href="./contacto.html" class="list-res__text">CONTACTO</a>
+					</li>
+				</ul>
+			</ul>
+		</div>
+
+			<script>
+				const menuRes = document.getElementById('menu-res');
+				menuRes.addEventListener('click', barraRes, true);
+				const menuRes2 = document.getElementById('menu2-res');
+				menuRes2.addEventListener('click', barraRes2, true);
+
+				function barraRes() {
+				document.getElementById('menu-res').style.visibility = 'hidden';
+				document.getElementById('menu2-res').style.visibility = 'visible';
+				document.getElementById('list-right-res').style.visibility = 'visible';}
+				function barraRes2() {
+				document.getElementById('menu-res').style.visibility = 'visible';
+				document.getElementById('menu2-res').style.visibility = 'hidden';
+				document.getElementById('list-right-res').style.visibility = 'hidden';}
+
+			</script>
+	</header>
+	<div class="home">
+		<div class="center__home">
+			<div class="home__title">
+				<h1 class="home__sobre">SOBRE</h1>
+				<h1 class="home__nosotros">NOSOTROS</h1>
+			</div>
+			<div class="bottom__home">
+				<div class="img__home">
+					<a href="./">
+						<img src="public/images/sobremi.png" class="home__img" alt=" ">
+					</a>
+				</div>
+				<div class="text__home">
+					<h2 class="home__text">Somos dos hermanos arrancando en el mundo del empredurismo dedicados a soluciones informatica.
+					Junto con un gran equipo de trabajo realizamos diferentes trabajos de harware y software.
+					Nuestra misión, es estar a la vanguardia de los avances tecnológicos que surgen día con día, para ofrecerle al cliente lo más novedoso en 
+					servicios del área de las tecnologías de la información y comunicación a precios competitivos y de alta calidad, por medio de personal altamente capacitado
+					Atendemos sus demandas principalmente a traves de redes sociales, pero contamos con local propio ubicado al sur de la ciudad de Reconquista</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-horarios">
+			<div class="footer-txt">HORARIOS</div>
+			<div class="footer-content">
+				<p class="white-hard">Lunes a Viernes</p>
+				<p class="white">08:00 a 12:00 - 16:00 a 20:00</p>
+				<p class="white-hard">Sábados</p>
+				<p class="white">08:00 a 12:00</p>
+			</div>
+		</div>
+		<div class="footer-accesos">
+			<div class="footer-txt">ACCESOS</div>
+			<div class="footer-content">
+				<div><a href="./index.html" class="footer__ac-text">Sobre nosotros</a></div>
+				<div><a href="./servicio.html" class="footer__ac-text">Servicio</a></div>
+				<div><a href="./historia.html" class="footer__ac-text">Historia</a></div>
+			</div>
+		</div>
+		<div class="footer-contacto">
+			<div class="footer-txt">CONTACTO</div>
+			<div class="footer-content">
+				<div class="contacto">
+					<img src="public/images/ubicacion.png" class="ico" alt=" ">
+					<p class="white">Reconquista, Santa Fe</p>
+				</div>
+				<div class="contacto">
+					<img src="public/images/telefono.png" class="ico" alt=" ">
+					<p class="white">+54 3482576550</p>
+				</div>
+				<div class="contacto">
+					<img src="public/images/whatsapp.png" class="ico" alt=" ">
+					<p class="white">+54 3482576550</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
